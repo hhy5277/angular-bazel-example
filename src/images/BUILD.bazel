@@ -2,9 +2,5 @@ package(default_visibility = ["//visibility:public"])
 
 filegroup(
     name = "image_assets",
-    srcs = [
-        "angular-logo-with-text.svg",
-        "bazel-navbar.svg",
-        "github-circle-white-transparent.svg",
-    ],
+    srcs = glob(["*.svg", "*.png"]),
 )

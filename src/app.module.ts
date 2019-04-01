@@ -6,13 +6,14 @@ import {StoreModule} from '@ngrx/store';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
+import {HomeModule} from './home';
 import {MaterialModule} from './material/material.module';
 import {todoReducer} from './reducers/reducers';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    AppRoutingModule, BrowserModule, BrowserAnimationsModule, MaterialModule,
+    AppRoutingModule, BrowserModule, BrowserAnimationsModule, MaterialModule, HomeModule,
     StoreModule.forRoot({todoReducer})
   ],
   exports: [AppComponent],

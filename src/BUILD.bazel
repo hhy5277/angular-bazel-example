@@ -28,7 +28,8 @@ ng_module(
         exclude = ["main.ts"],
     ),
     assets = [
-        ":app.component.html",
+        "app.component.html",
+        "home.html",
         "//src/styles:main",
     ],
     tsconfig = ":tsconfig.json",
